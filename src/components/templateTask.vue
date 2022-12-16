@@ -1,7 +1,7 @@
 <template>
     <v-app style="background-color:#FBF7F4">
         <v-container fluid >
-            <v-row no-gutters style="height: 150px;">
+            <v-row no-gutters style="height: 850px;">
                 <v-col class="col-3 pt-3">
                     <div class="text-center d-flex flex-column align-center justify-center pa-2" flat tile>
                         <v-img 
@@ -78,7 +78,7 @@
                                     mdi-logout
                                 </v-icon>
                             </v-btn>
-                        <h4 style="font-weight:bold" class="pb-2">Logout</h4>
+                            <h4 style="font-weight:bold" class="pb-2">Log out</h4>
                         </div>
                     </div>
                 </v-col>
@@ -132,11 +132,12 @@
                                         class="pa-4"
                                         outlined
                                         tile
+                                        style="height:250px"
                                         >
                                             <div>
                                                 <h4>Weekly Report</h4>
-                                                <p>track your Performance</p>
-                                                <v-btn class="mt-4"
+                                                <p class="mt-4">Track your Performance</p>
+                                                <v-btn class="mt-10"
                                                 outlined
                                                 color="black">
                                                     VIEW REPORT
@@ -149,6 +150,7 @@
                                         class="pa-4"
                                         outlined
                                         tile
+                                        style="height:250px"
                                         >
                                             <div class="text-center">
                                                 <h4>Study 78x</h4>
@@ -163,6 +165,7 @@
                                         class="pa-4"
                                         outlined
                                         tile
+                                        style="height:250px"
                                         >
                                             <div class="text-center">
                                                 <h4>Analyses</h4>
@@ -246,8 +249,111 @@
                             </v-col>
                             </v-row>
                         </v-container>
+                        <div class="d-flex flex-row justify-start ma-2">
+                            <h3 class="ma-2">My learnings<span><small style="color:grey;font-weight: 300; display: block;">Your progress of medical lectures</small></span></h3>
+                            <v-spacer></v-spacer>
+                            <v-icon>
+                                mdi-dots-horizontal
+                            </v-icon>
+                        </div>
+                        <v-container >
+                            <v-row no-gutters >
+                            <v-col class="col-6" >
+                                <v-card
+                                style="background-color:#FBF7F4"
+                                tile
+                                flat
+                                class="pa-2"
+                                >
+                                    <div class="d-flex flex-row justify-start">
+                                        <v-btn
+                                        class="pa-2"
+                                        large
+                                        color="#EBE9E8"
+                                        >
+                                            <v-icon class="pa-2" style="color:#566584;">
+                                                mdi-virus
+                                            </v-icon>
+                                        </v-btn>
+                                        <h4 class="px-2">Viruses<span><small style="color:grey;font-weight: 300; display: block;">96% progress</small></span></h4>
+                                    </div>
+                                </v-card>
+                            </v-col>
+                            <v-col class="col-6" >
+                                <v-card
+                                style="background-color:#FBF7F4"
+                                tile
+                                flat
+                                class="pa-2"
+                                >
+                                <div class="d-flex flex-row justify-start">
+                                        <v-btn
+                                        class="pa-2"
+                                        large
+                                        color="#FCEEE5"
+                                        >
+                                            <v-icon class="pa-2" style="color:#F7D6B6;">
+                                                mdi-bacteria
+                                            </v-icon>
+                                        </v-btn>
+                                        <h4 class="px-2">Bacterial Cells<span><small style="color:grey;font-weight: 300; display: block;">33% progress</small></span></h4>
+                                </div>
+                                </v-card>
+                            </v-col>
+                            <v-col class="col-6" >
+                                <v-card
+                                style="background-color:#FBF7F4"
+                                tile
+                                flat
+                                class="pa-2"
+                                >
+                                <div class="d-flex flex-row justify-start">
+                                        <v-btn
+                                        class="pa-2"
+                                        large
+                                        color="#F7ECEB"
+                                        >
+                                            <v-icon class="pa-2" style="color:#DAB4B8;">
+                                                mdi-medical-bag
+                                            </v-icon>
+                                        </v-btn>
+                                        <h4 class="px-2">Med Science<span><small style="color:grey;font-weight: 300; display: block;">7% progress</small></span></h4>
+                                </div>
+                                </v-card>
+                            </v-col>
+                            <v-col class="col-6" >
+                                <v-card
+                                style="background-color:#FBF7F4"
+                                tile
+                                flat
+                                class="pa-2"
+                                >
+                                <div class="d-flex flex-row justify-start">
+                                        <v-btn
+                                        class="pa-2"
+                                        large
+                                        color="#E4E8E8"
+                                        >
+                                            <v-icon class="pa-2" style="color:#9DAEB4;">
+                                                mdi-compost
+                                            </v-icon>
+                                        </v-btn>
+                                        <h4 class="px-2">Human gens<span><small style="color:grey;font-weight: 300; display: block;">58% progress</small></span></h4>
+                                </div>
+                                </v-card>
+                            </v-col>
+                            </v-row>
+                        </v-container>
                     </div>
+                    <v-divider
+                    vertical
+                    inset>
+                    </v-divider>
                 </v-col>
+                <v-divider
+                    vertical
+                    inset>
+                    </v-divider>
                 <v-col class="col-1 pt-3">
                     <div class="pa-2 text-center ma-3" flat tile>
                         <v-badge
